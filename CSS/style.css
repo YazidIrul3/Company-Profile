@@ -117,10 +117,15 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 430px;
+  border-radius: 7%;
+  width: 420px;
   height: 200px;
   margin: auto 20px 1.2em;
   padding: 20px;
+  -webkit-border-radius: 7%;
+  -moz-border-radius: 7%;
+  -ms-border-radius: 7%;
+  -o-border-radius: 7%;
 }
 
 .blog .type-of-shoes .football {
@@ -155,19 +160,41 @@
   html {
     font-size: 90%;
   }
+  
+  .blog .type-of-shoes div {
+    width: 360px;
+    height: 180px;
+  }
+  
+  .blog .type-of-shoes div img {
+    width: 185px;
+    height: 85px;
+  }
+    
+  .blog .type-of-shoes .football img {
+    width: 185px;
+    height: 185px;
+  }
+
+
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 85%;
+  }
 
   .blog .type-of-shoes div {
-    width: 390px;
-    height: 180px;
+    width: 330px;
+    height: 155px;
   }
 
   .blog .type-of-shoes div img {
-    width: 190px;
-    height: 90px;
+    width: 180px;
+    height: 80px;
   }
   .blog .type-of-shoes .football img {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -285,7 +312,7 @@
     font-size: 0.8em;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 360px) {
   html {
     font-size: 60%;
   }
