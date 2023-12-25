@@ -7,7 +7,7 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.904);
   color: #111111;
@@ -22,12 +22,8 @@
 }
 
 .navbar .title h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 500;
-}
-
-.navbar .title h1 span {
-  color: rgba(237, 59, 59, 0.904);
 }
 
 .navbar .navbar-menu a {
@@ -48,110 +44,184 @@
   display: none;
 }
 
+.navbar .login a {
+  text-decoration: none;
+  background-color: #bf3131;
+  padding: 7px;
+  color: rgba(255, 255, 255, 0.904);
+}
+
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../IMG/home-img.jpg);
+  background-image: url(../IMG/img-homesection.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100vw;
-  min-height: 100vh;
+  min-width: 100vw;
+  min-height: 75vh;
   top: 0;
   bottom: 0;
 }
 
 .home .side-text h1 {
-  font-size: 4em;
+  font-size: 2em;
   color: rgba(255, 255, 255, 0.904);
-  background-color: rgba(237, 59, 59, 0.904);
+  background-color: #092635;
   padding: 10px;
 }
 
-.home .side-text h1 span {
-  color: #111111;
-}
-
-.home .side-text p {
+.home .search {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px auto;
+  width: 68vw;
+  height: 8vh;
   background-color: rgba(255, 255, 255, 0.904);
-  text-align: center;
-  padding: 10px;
-  font-size: 1.2em;
 }
 
-.home .link-belanja a {
-  display: block;
+.home .search img {
+  margin: 7px;
+}
+
+.home .search input {
+  margin: 7px;
+  background-color: rgba(255, 255, 255, 0.904);
+  width: 50vw;
+  height: 5vh;
+}
+
+.home .search a {
+  margin: 7px;
   text-decoration: none;
-  background-color: #1474e3;
-  color: #111111;
-  padding: 10px;
-  font-size: 1.7em;
-  text-align: center;
-  margin-top: 10px;
+  background-color: #39a7ff;
+  padding: 0.7em;
+  color: rgba(255, 255, 255, 0.904);
 }
 
-.blog {
+.home .search a:hover {
+  background-color: rgba(57, 167, 255, 0.8);
+}
+
+.layanan {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  align-items: start;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.904);
   width: 100vw;
-  height: 100vh;
+  height: 15vh;
+  top: 0;
   right: 0;
   left: 0;
   bottom: 0;
 }
 
-.blog .type-of-shoes {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 5%;
-  flex-wrap: wrap;
-}
-
-.blog .type-of-shoes div {
+.layanan div {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3%;
+  min-width: 230px;
+  min-height: 90px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px #111111;
+  padding: 20px;
+  border: 1px solid #092635;
+  background-color: rgba(255, 255, 255, 0.904);
+  /* background: linear-gradient(
+    to right,
+    rgba(66, 243, 93, 0.904),
+    rgba(31, 219, 59, 0.904)
+  ); */
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+  -ms-border-radius: 3%;
+  -o-border-radius: 3%;
+}
+
+.layanan div h1 {
+  font-size: 1.4em;
+}
+
+.property {
+  margin: 30px 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.2em;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.property .header-propertysection h1 {
+  font-size: 1.3em;
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+
+.property .property-ty {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.property .property-ty div {
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 7%;
-  width: 420px;
-  height: 200px;
-  margin: auto 20px 1.2em;
-  padding: 20px;
-  -webkit-border-radius: 7%;
-  -moz-border-radius: 7%;
-  -ms-border-radius: 7%;
-  -o-border-radius: 7%;
+  padding: 7px;
+  min-width: 260px;
+  min-height: 100px;
+  background-color: #092635;
+  box-shadow: 2px 3px 3px #111111;
+  margin: 10px;
 }
 
-.blog .type-of-shoes .football {
-  background-color: #65b741;
-}
-.blog .type-of-shoes .running {
-  background-color: #ffb534;
-}
-.blog .type-of-shoes .basket {
-  background-color: #ff9800;
-}
-.blog .type-of-shoes .casual {
-  background-color: #994d1c;
+.property .property-ty div img {
+  max-width: 70px;
+  max-height: 70px;
 }
 
-.blog .type-of-shoes div h1 {
-  font-size: 1.9em;
+.property .property-ty div h1 {
+  color: rgba(255, 255, 255, 0.904);
+  font-size: 1.2em;
 }
 
-.blog div img {
-  width: 250px;
-  height: 150px;
+.property .some-properties {
+  margin: 20px;
 }
 
-.blog .football img {
-  width: 200px;
+.property .some-properties .house-someProperties {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.header-someProperties h1 {
+  margin-left: 40px;
+  font-size: 1.3em;
+}
+
+.property .some-properties .house-someProperties div {
+  display: flex;
+  flex-direction: column;
+  justify-content: column;
+  align-items: center;
+  background-color: #f1efef;
+  border: 2px solid #092635;
+  width: 320px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.property .some-properties .house-someProperties .house-1-someProperties img {
+  width: 300px;
   height: 200px;
 }
 
@@ -160,47 +230,43 @@
   html {
     font-size: 90%;
   }
-  
-  .blog .type-of-shoes div {
+
+  /* .layanan .type-of-shoes div {
     width: 360px;
     height: 180px;
   }
-  
-  .blog .type-of-shoes div img {
+
+  .layanan .type-of-shoes div img {
     width: 185px;
     height: 85px;
   }
-    
-  .blog .type-of-shoes .football img {
+
+  .layanan .type-of-shoes .football img {
     width: 185px;
     height: 185px;
-  }
-
-
+  } */
 }
 @media (max-width: 900px) {
   html {
     font-size: 85%;
   }
 
-  .blog .type-of-shoes div {
-    width: 330px;
-    height: 155px;
+  .navbar a {
+    font-size: 1em;
   }
 
-  .blog .type-of-shoes div img {
-    width: 180px;
-    height: 80px;
+  .layanan div {
+    min-width: 120px;
+    min-height: 50px;
   }
-  .blog .type-of-shoes .football img {
-    width: 180px;
-    height: 180px;
-  }
-}
 
-@media (max-width: 768px) {
-  html {
-    font-size: 80%;
+  .property .property-ty div {
+    min-width: 220px;
+    min-height: 80px;
+  }
+  .property .property-ty div img {
+    max-width: 50px;
+    max-height: 50px;
   }
 
   .navbar .navbar-menu {
@@ -228,7 +294,7 @@
     justify-content: center;
     align-items: center;
     padding: 1.4em;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   .navbar .navbar-menu a:hover {
@@ -243,27 +309,47 @@
     width: 40px;
     height: 40px;
   }
+  .property .property-ty div h1 {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 1em;
+  }
+  /* .layanan .type-of-shoes div {
+    width: 330px;
+    height: 155px;
+  }
+  
+  .layanan .type-of-shoes div img {
+    width: 180px;
+    height: 80px;
+  }
+  .layanan .type-of-shoes .football img {
+    width: 180px;
+    height: 180px;
+  } */
+}
 
-  .blog .type-of-shoes {
-    display: flex;
-    justify-content: center;
-  }
-  .blog .type-of-shoes div {
-    width: 300px;
-    height: 120px;
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
   }
 
-  .blog .type-of-shoes div img {
-    width: 170px;
-    height: 70px;
+  .layanan div {
+    min-width: 100px;
+    min-height: 30px;
+    font-size: 0.8em;
   }
-  .blog .type-of-shoes .football img {
-    width: 170px;
-    height: 170px;
+  .property .property-ty div {
+    min-width: 180px;
+    min-height: 70px;
   }
-  .blog .type-of-shoes {
-    display: flex;
-    justify-content: flex-start;
+  .property .property-ty div img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .property .property-ty div h1 {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 0.8em;
   }
 }
 
@@ -271,22 +357,23 @@
   html {
     font-size: 65%;
   }
-  .blog .type-of-shoes div {
-    width: 160px;
-    height: 80px;
-    padding: 10px;
+  .layanan div {
+    min-width: 70px;
+    min-height: 20px;
+    font-size: 0.6em;
+  }
+  .property .property-ty div {
+    min-width: 120px;
+    min-height: 50px;
+  }
+  .property .property-ty div img {
+    max-width: 30px;
+    max-height: 30px;
   }
 
-  .blog .type-of-shoes div img {
-    width: 90px;
-    height: 50px;
-  }
-  .blog .type-of-shoes .football img {
-    width: 90px;
-    height: 90px;
-  }
-  .blog .type-of-shoes div h1 {
-    font-size: 0.8em;
+  .property .property-ty div h1 {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 0.7em;
   }
 }
 
@@ -294,45 +381,66 @@
   html {
     font-size: 62%;
   }
-  .blog .type-of-shoes div {
+
+  .layanan div {
+    min-width: 70px;
+    min-height: 20px;
+    font-size: 0.6em;
+  }
+
+  .property .property-ty div {
+    min-width: 100px;
+    min-height: 40px;
+  }
+
+  .property .property-ty div img {
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+  .property .property-ty div h1 {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 0.6em;
+  }
+  /* .layanan .type-of-shoes div {
     width: 145px;
     height: 60px;
     padding: 20px;
   }
-
-  .blog .type-of-shoes div img {
+  
+  .layanan .type-of-shoes div img {
     width: 70px;
     height: 45px;
   }
-  .blog .type-of-shoes .football img {
+  .layanan .type-of-shoes .football img {
     width: 60px;
     height: 60px;
   }
-  .blog .type-of-shoes div h1 {
+  .layanan .type-of-shoes div h1 {
     font-size: 0.8em;
-  }
+  } */
 }
 @media (max-width: 360px) {
   html {
     font-size: 60%;
   }
-  .blog .type-of-shoes div {
+  /* .layanan .type-of-shoes div {
     width: 100px;
     height: 50px;
     padding: 10px;
   }
 
-  .blog .type-of-shoes div img {
+  .layanan .type-of-shoes div img {
     width: 60px;
     height: 35px;
   }
-  .blog .type-of-shoes .football img {
+  .layanan .type-of-shoes .football img {
     width: 60px;
     height: 60px;
   }
-  .blog .type-of-shoes div h1 {
+  .layanan .type-of-shoes div h1 {
     font-size: 0.8em;
-  }
+  } */
 }
 
 /* our is media queries end */
