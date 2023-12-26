@@ -17,7 +17,6 @@ body {
   color: #111111;
   width: 100vw;
   height: 10vh;
-  padding: 25px;
   right: 0;
   left: 0;
   top: 0;
@@ -99,10 +98,10 @@ body {
 }
 
 .home .search a {
-  margin: 7px;
+  margin: 10px;
+  padding: 0.5em;
   text-decoration: none;
   background-color: #39a7ff;
-  padding: 0.7em;
   color: rgba(255, 255, 255, 0.904);
 }
 
@@ -125,7 +124,7 @@ body {
 }
 
 .layanan div {
-  margin: 20px;
+  margin: 10px;
 }
 
 .layanan .type-property {
@@ -195,13 +194,14 @@ body {
   font-size: 1.2em;
 }
 
+/* properti section start */
 .property {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  margin: 50px 0;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   font-size: 20px;
   top: 0;
   right: 0;
@@ -225,7 +225,7 @@ body {
   overflow-x: auto;
   background-color: rgba(255, 255, 255, 0.904);
   width: 80vw;
-  height: 33vh;
+  height: 30vh;
   overflow-y: hidden;
 }
 
@@ -242,7 +242,7 @@ body {
   background-color: #f1efef;
   box-shadow: 1px 1px 1px #111111;
   width: 270px;
-  height: 220px;
+  height: 200px;
   padding: 10px;
   margin: 10px;
 }
@@ -272,6 +272,72 @@ body {
 .property .some-properties div main .location p {
   font-size: 17px;
 }
+/* properti section end */
+
+/* footer start */
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, #5caaea, #2789d9);
+  width: 100vw;
+  height: 20vh;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .link a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #092635;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+footer .link a:hover {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.904);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transform: translateY(20);
+  -moz-transform: translateY(20);
+  -ms-transform: translateY(20);
+  -o-transform: translateY(20);
+}
+
+footer .github {
+  display: flex;
+  flex-direction: row;
+  padding: 7px;
+}
+
+footer .github a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+footer .github div img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* footer end */
 
 /* our is media queries strat */
 @media (max-width: 1366px) {
