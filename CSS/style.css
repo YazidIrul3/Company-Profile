@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -192,9 +196,11 @@
 }
 
 .property {
+  display: flex;
+  justify-content: center;
   margin: 30px 0;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   font-size: 1.2em;
   top: 0;
   right: 0;
@@ -203,13 +209,19 @@
 }
 
 .property .some-properties {
-  margin: 20px;
+  margin: 10px;
 }
 
 .property .some-properties .house-someProperties {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  background-color: rgba(255, 255, 255, 0.904);
+  width: 80vw;
+  height: 30vh;
+  overflow-y: hidden;
 }
 
 .property .header-someProperties h1 {
@@ -220,26 +232,42 @@
 .header-someProperties p {
   font-size: 0.3em;
 }
-.property .some-properties .house-someProperties div {
+.property .some-properties .house-someProperties main {
   display: flex;
   flex-direction: column;
-  justify-content: column;
+  justify-content: space-between;
   align-items: center;
   background-color: #f1efef;
   box-shadow: 1px 1px 1px #111111;
-  width: 220px;
+  width: 240px;
   height: 200px;
   padding: 10px;
   margin: 10px;
 }
 
-.property .some-properties .house-someProperties .house-1-someProperties img {
+.property .some-properties .house-someProperties main img {
   width: 180px;
-  height: 80px;
+  height: 90px;
 }
 
-.property .house-someProperties div h1 {
-  font-size: 0.7em;
+.property .house-someProperties main h1 {
+  font-size: 20px;
+}
+
+.property .some-properties .house-someProperties main .location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.property .some-properties .house-someProperties main .location img {
+  width: 35px;
+  height: 35px;
+}
+
+.property .some-properties .house-someProperties main .location p {
+  font-size: 17px;
 }
 
 /* our is media queries strat */
@@ -252,12 +280,12 @@
     width: 360px;
     height: 180px;
   }
-
+  
   .layanan .type-of-shoes div img {
     width: 185px;
     height: 85px;
   }
-
+  
   .layanan .type-of-shoes .football img {
     width: 185px;
     height: 185px;
@@ -272,18 +300,23 @@
     font-size: 1em;
   }
 
-  .layanan div {
+  .layanan .type-property div {
     min-width: 120px;
     min-height: 50px;
   }
-
-  .property .property-ty div {
+  
+  .layanan .property-ty div {
     min-width: 220px;
     min-height: 80px;
   }
-  .property .property-ty div img {
+  .layanan .property-ty div img {
     max-width: 50px;
     max-height: 50px;
+  }
+
+  .layanan .property-ty div h1 {
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 1em;
   }
 
   .navbar .navbar-menu {
@@ -326,10 +359,6 @@
     width: 40px;
     height: 40px;
   }
-  .property .property-ty div h1 {
-    color: rgba(255, 255, 255, 0.904);
-    font-size: 1em;
-  }
   /* .layanan .type-of-shoes div {
     width: 330px;
     height: 155px;
@@ -350,45 +379,47 @@
     font-size: 80%;
   }
 
-  .layanan div {
+  .layanan .type-property div {
     min-width: 100px;
     min-height: 30px;
     font-size: 0.8em;
   }
-  .property .property-ty div {
+  .layanan .property-ty div {
     min-width: 180px;
     min-height: 70px;
   }
-  .property .property-ty div img {
+  .layanan .property-ty div img {
     max-width: 50px;
     max-height: 50px;
   }
 
-  .property .property-ty div h1 {
+  .layanan .property-ty div h1 {
     color: rgba(255, 255, 255, 0.904);
     font-size: 0.8em;
   }
+
+
 }
 
 @media (max-width: 576px) {
   html {
     font-size: 65%;
   }
-  .layanan div {
+  .layanan .type-property div {
     min-width: 70px;
     min-height: 20px;
     font-size: 0.6em;
   }
-  .property .property-ty div {
+  .layanan .property-ty div {
     min-width: 120px;
     min-height: 50px;
   }
-  .property .property-ty div img {
+  .layanan .property-ty div img {
     max-width: 30px;
     max-height: 30px;
   }
 
-  .property .property-ty div h1 {
+  .layanan .property-ty div h1 {
     color: rgba(255, 255, 255, 0.904);
     font-size: 0.7em;
   }
@@ -399,23 +430,23 @@
     font-size: 62%;
   }
 
-  .layanan div {
+  .layanan .type-property div {
     min-width: 70px;
     min-height: 20px;
     font-size: 0.6em;
   }
 
-  .property .property-ty div {
+  .layanan .property-ty div {
     min-width: 100px;
     min-height: 40px;
   }
 
-  .property .property-ty div img {
+  .layanan .property-ty div img {
     max-width: 25px;
     max-height: 25px;
   }
 
-  .property .property-ty div h1 {
+  .layanan .property-ty div h1 {
     color: rgba(255, 255, 255, 0.904);
     font-size: 0.6em;
   }
