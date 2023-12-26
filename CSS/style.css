@@ -198,10 +198,11 @@ body {
 .property {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 30px 0;
   width: 100vw;
-  height: 150vh;
-  font-size: 1.2em;
+  height: 100vh;
+  font-size: 20px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -209,10 +210,14 @@ body {
 }
 
 .property .some-properties {
+  display: flex;
+  flex-direction: column;
   margin: 10px;
 }
 
-.property .some-properties .house-someProperties {
+.property .some-properties .house-someProperties,
+.property .some-properties .apartemen-someProperties,
+.property .some-properties .villa-someProperties {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -220,53 +225,51 @@ body {
   overflow-x: auto;
   background-color: rgba(255, 255, 255, 0.904);
   width: 80vw;
-  height: 30vh;
+  height: 33vh;
   overflow-y: hidden;
 }
 
 .property .header-someProperties h1 {
-  margin-left: 40px;
   font-size: 1.2em;
+  margin: 20px 0;
 }
 
-.header-someProperties p {
-  font-size: 0.3em;
-}
-.property .some-properties .house-someProperties main {
+.property .some-properties div main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #f1efef;
   box-shadow: 1px 1px 1px #111111;
-  width: 240px;
-  height: 200px;
+  width: 270px;
+  height: 220px;
   padding: 10px;
   margin: 10px;
 }
 
-.property .some-properties .house-someProperties main img {
-  width: 180px;
-  height: 90px;
+.property .some-properties div main img {
+  width: 210px;
+  height: 120px;
 }
 
-.property .house-someProperties main h1 {
+.property .some-properties div main h1 {
   font-size: 20px;
 }
 
-.property .some-properties .house-someProperties main .location {
+.property .some-properties div main .location {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.property .some-properties .house-someProperties main .location img {
-  width: 35px;
-  height: 35px;
+.property .some-properties div main .location img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
 
-.property .some-properties .house-someProperties main .location p {
+.property .some-properties div main .location p {
   font-size: 17px;
 }
 
@@ -304,7 +307,7 @@ body {
     min-width: 120px;
     min-height: 50px;
   }
-  
+
   .layanan .property-ty div {
     min-width: 220px;
     min-height: 80px;
@@ -397,8 +400,6 @@ body {
     color: rgba(255, 255, 255, 0.904);
     font-size: 0.8em;
   }
-
-
 }
 
 @media (max-width: 576px) {
