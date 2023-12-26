@@ -310,10 +310,6 @@ footer .link a:hover {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  -webkit-transform: translateY(20);
-  -moz-transform: translateY(20);
-  -ms-transform: translateY(20);
-  -o-transform: translateY(20);
 }
 
 footer .github {
