@@ -110,9 +110,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.904);
   width: 100vw;
-  height: 15vh;
+  height: 50vh;
   top: 0;
   right: 0;
   left: 0;
@@ -120,6 +121,15 @@
 }
 
 .layanan div {
+  margin: 20px;
+}
+
+.layanan .type-property {
+  display: flex;
+  flex-direction: row;
+}
+
+.layanan .type-property div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -147,30 +157,19 @@
   font-size: 1.4em;
 }
 
-.property {
-  margin: 30px 0;
-  width: 100vw;
-  height: 100vh;
-  font-size: 1.2em;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.property .header-propertysection h1 {
+.layanan .header-layanansection h1 {
   font-size: 1.3em;
   margin-left: 200px;
   margin-bottom: 20px;
 }
 
-.property .property-ty {
+.layanan .property-ty {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.property .property-ty div {
+.layanan .property-ty div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -182,14 +181,25 @@
   margin: 10px;
 }
 
-.property .property-ty div img {
+.layanan .property-ty div img {
   max-width: 70px;
   max-height: 70px;
 }
 
-.property .property-ty div h1 {
+.layanan .property-ty div h1 {
   color: rgba(255, 255, 255, 0.904);
   font-size: 1.2em;
+}
+
+.property {
+  margin: 30px 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.2em;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .property .some-properties {
@@ -202,27 +212,34 @@
   margin: 20px;
 }
 
-.header-someProperties h1 {
+.property .header-someProperties h1 {
   margin-left: 40px;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
+.header-someProperties p {
+  font-size: 0.3em;
+}
 .property .some-properties .house-someProperties div {
   display: flex;
   flex-direction: column;
   justify-content: column;
   align-items: center;
   background-color: #f1efef;
-  border: 2px solid #092635;
-  width: 320px;
-  height: 300px;
+  box-shadow: 1px 1px 1px #111111;
+  width: 220px;
+  height: 200px;
   padding: 10px;
   margin: 10px;
 }
 
 .property .some-properties .house-someProperties .house-1-someProperties img {
-  width: 300px;
-  height: 200px;
+  width: 180px;
+  height: 80px;
+}
+
+.property .house-someProperties div h1 {
+  font-size: 0.7em;
 }
 
 /* our is media queries strat */
