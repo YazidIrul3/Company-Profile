@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #081b29;
+    background-image: url(../IMG/a\ house.jpg);
 }
 
 .wrapper {
