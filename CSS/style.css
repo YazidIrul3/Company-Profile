@@ -46,12 +46,14 @@ body {
   color: rgba(92, 89, 89, 0.925);
   font-size: 1.2em;
   padding: 7px;
+  transition: .5s ease;
 }
 
 .navbar .navbar-menu a:hover {
   color: #111111;
   width: 30px;
   height: 30px;
+  transition: .5s ease;
 }
 
 .navbar .beside-navbar img {
