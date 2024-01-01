@@ -269,7 +269,7 @@ body {
     border-bottom: 3px solid rgb(87, 36, 159);
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
-    transition: .9s ease;
+    transition: 1s ease;
 }
 
 .wrapper.active .bg-animate {
