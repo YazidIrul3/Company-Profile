@@ -66,7 +66,7 @@ body {
   background-color: #000000;
   padding: 7px;
   color: rgba(255, 255, 255, 0.904);
-  transition: .5s ease;
+  transition: 0.5s ease;
   border-radius: 5px;
 }
 
@@ -129,14 +129,14 @@ body {
   margin: 10px;
   padding: 0.5em;
   text-decoration: none;
-  background-color: #11009e; 
+  background-color: #11009e;
   color: rgba(255, 255, 255, 0.904);
-  transition: .5s ease;
+  transition: 0.5s ease;
   border-radius: 8px;
 }
 
 .home .search a:hover {
-  background-color: #c4326d ;
+  background-color: #c4326d;
 }
 
 .layanan {
@@ -233,7 +233,7 @@ body {
   width: 100vw;
   height: 110vh;
   font-size: 20px;
-  background: linear-gradient(#86b6f6 , #4942e4);
+  background: linear-gradient(#86b6f6, #4942e4);
   top: 0;
   right: 0;
   bottom: 0;
@@ -292,7 +292,7 @@ body {
 
 .property .some-properties div main .location {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -315,7 +315,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 70vh;
-  background:linear-gradient(#4942e4 , #c4326d , #4942e4);
+  background: linear-gradient(#4942e4, #c4326d, #4942e4);
   top: 0;
   bottom: 0;
   right: 0;
@@ -327,12 +327,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-width: 550px;
-  min-height: 250px;
   border-radius: 8px;
   background-color: #f1efef;
+  width: 550px;
+  height: 350px;
   box-shadow: 1px 1px 1px 1px;
-  margin: 20px;
+  margin: 30px;
 }
 
 .contact div img {
@@ -356,7 +356,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(#4942e4 , #092635);
+  background: linear-gradient(#4942e4, #092635);
   width: 100vw;
   height: 40vh;
   transition: 0.3s;
@@ -473,6 +473,10 @@ footer .other .github div img {
     font-size: 90%;
   }
 
+  .contact div {
+    width: 270px;
+    height: 350px;
+  }
   /* .layanan .type-of-shoes div {
     width: 360px;
     height: 180px;
@@ -556,6 +560,7 @@ footer .other .github div img {
     width: 40px;
     height: 40px;
   }
+
   /* .layanan .type-of-shoes div {
     width: 330px;
     height: 155px;
